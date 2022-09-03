@@ -72,6 +72,4 @@ The dataset contains weather information (Temperature, Humidity, Windspeed, Visi
 
 ## Conclusions:
 
-● We started with loading the data, then we did Exploratory Data Analysis (EDA), null values treatment, feature selection, encoding of categorical columns, and then model building. In all of these models, our accuracy ranges from 56% to 91%, which can be said to be good for such a large dataset. This performance could be due to various reasons like the proper pattern of data, large data, or because of the relevant features.
-
-● After performing variable importance analysis to find the most significant variables for all the models developed with the given data sets. We are getting the best results from CatBoost and LightGBM.
+● We started with loading the data, then we did Exploratory Data Analysis (EDA), null values treatment, feature selection, encoding of categorical columns, and then model building.With the data filtered for multicollinearity and features trimmed down, we ran several regression models on the features with test-train split of 0.25, of which Random Forest performed the best with an R2 of 0.91 on the test dataset.
